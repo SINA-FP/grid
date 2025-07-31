@@ -4,8 +4,30 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     max-width: 1300px;
     margin: 5rem auto;
 }
 
+.grid{
+    width: 300px;
+    display: inline-block;
+}
+
+.img {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    color: black;
+}
+
+.text {
+    margin: 1rem 0;
+}
