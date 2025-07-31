@@ -8,26 +8,90 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
+
 .container {
     max-width: 1300px;
     margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
 }
 
-.grid{
+.grid {
     width: 300px;
     display: inline-block;
+}
+
+.gridItem {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    padding: 12px 27px;
+}
+
+.gridItem:hover {
+    background-color: aqua;
+    box-shadow: 0 8px 24px -1px aqua;
+}
+
+.gridItem:hover .description {
+    color: white;
 }
 
 .img {
     margin-bottom: 2rem;
     text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    top: 0;
+}
+
+.gridItem:hover .img {
+    top: -40px;
+}
+
+.img::after {
+    content: "";
+    position: absolute;
+    width: 43%;
+    height: 10%;
+    box-shadow: 0 125px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    left: 30%;
+    bottom: 112px;
 }
 
 .description {
     text-align: center;
     color: black;
+    transition: color 0.3s ease;
+}
+
+.title {
+    font-size: 26px;
 }
 
 .text {
     margin: 1rem 0;
+}
+
+.price {
+    margin: 1rem 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid red;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.gridItem:hover .btn {
+    background-color: red;
+    color: white;
+    transition: all 0.3s ease;
 }
