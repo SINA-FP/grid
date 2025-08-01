@@ -32,8 +32,8 @@ img {
 }
 
 .gridItem:hover {
-    background-color: aqua;
-    box-shadow: 0 8px 24px -1px aqua;
+    background-color: #1b7400;
+    box-shadow: 0 8px 24px -1px #1b7400;
 }
 
 .gridItem:hover .description {
