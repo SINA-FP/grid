@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    cursor: default;
 }
 
 img {
@@ -88,6 +89,7 @@ img {
     border: 2px solid red;
     padding: 12px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .gridItem:hover .btn {
